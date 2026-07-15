@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    background: #1e1e1e;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+}
+#gamecont{
+    position: relative;
+    width:480px;
+    height:640px;
+    box-shadow: 0 0 30px rgba(0,0,0, 0.5);
+    overflow: hidden;
+    border:4px solid #ffffff;
+}
+#gamecanvas{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #70c5ce;
+}
+#ui{
+    position: absolute;
+    top:15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    pointer-events: none;
+}
+#score{
+    background: rgba(0,0,0, 0.4);
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px;
+}
+#kills{
+    background: rgba(0,0,0, 0.4);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+#startscreen{
+    position: absolute;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background: rgba(0,0,0, 0.5);
+    inset:0;
+    justify-content: center;
+}
+#gameoverscreen{
+    position: absolute;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background: rgba(0,0,0, 0.5);
+    inset:0;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+#startscreen h1{
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+#gameoverscreen h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+#startscreen p{
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+#gameoverscreen p{
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+#finalscore{
+    color: #ffe600;
+}
+#finalkills{
+    color: #ffe600;
+}
+#killval{
+    color: #ffe600;
+}
+#scoreval{
+    color: #ffe600;
+}
+#restartbtn{
+    width: 180px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#restartbtn:hover{
+    transform: scale(1.08);
+}
