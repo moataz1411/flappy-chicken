@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flappy Chicken</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="gamecont">
+    <canvas id="gamecanvas" width="480" height="640"></canvas>
+    <div id="ui">
+    <div id="score">
+        SCORE: <span id="scoreval">0</span>
+    </div>
+    <div id="kills">
+        KILLS: <span id="killval">0</span>
+    </div>
+</div>
+<div id="startscreen">
+<h1>FLAPPY CHICKEN</h1>
+<p>SPACE -> FLY</p>
+<p>F -> LASER</p>
+<button id="startbtn">START NOW</button>
+</div>
+<div id="gameoverscreen" class="hidden">
+    <h1>GAME OVER</h1>
+    <p>SCORE: <span id="finalscore">0</span> </p>
+    <p>CROWS DESTROYED: <span id="finalkills">0</span> </p>
+    <button id="restartbtn">TRY AGAIN</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
